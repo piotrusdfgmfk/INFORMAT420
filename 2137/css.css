@@ -1,0 +1,26 @@
+#clock-container {
+  /* Add any styles for the clock container here */
+}
+
+#clock-container.hidden {
+  display: none;
+}
+
+#clock {
+  display: flex;
+  justify-content: space-between;
+  font-size: 150px;
+    font-family: comic sans ms;
+  font-weight: bold;
+}
+
+#clock > div {
+  width: 30px;
+  text-align: center;
+}
+
+#ruchanie {
+  width: 500px;
+  margin: auto;
+
+}

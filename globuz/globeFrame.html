@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Hector Globe</title>
+  <script type="text/javascript" src="http://freeearth.poly9.com/api.js"></script>
+  <script type="text/javascript">
+  <!-- 
+    var map;
+    
+		function setup() {
+		  loadMap(parent.document.getElementById("Orbs").value);
+		}
+		
+		function onMapLoad() {
+		  if (parent.document.getElementById("Stars").checked) {
+		    this.toggleStars();
+		  }
+		  if (parent.latLng) {
+		    this.setTargetLatLng(parent.latLng);
+		  }  
+		  if (parent.altitude) {
+		    this.setAltitude(parent.altitude);
+		  }  
+		}
+		
+		function loadMap(orb) {
+		  map = eval("new FE." + orb + "(document.getElementById('Map'))");
+		  map.onLoad = onMapLoad;
+		  map.load();
+		}
+  -->
+  </script>
+</head>
+<body onload="setup();" style="margin: 0; border:0;" bgcolor="black">
+    <div id="Map" style="width: 460px; height: 460px"></div>		
+</body>
+</html>

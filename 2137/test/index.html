@@ -1,0 +1,64 @@
+
+<html>
+    		<link rel="stylesheet" href="css.css" />
+    <body style="background-color:yellow;">
+
+<br>
+<br>
+<br>
+<br>
+
+         <script src="script.js"></script>
+                 <script src="script2.js"></script>
+         <script src="confetti.js"></script>
+
+<div id="ruchanie">
+    <div id="clock-container">
+  <div id="clock">
+    <div id="hours">00</div>
+    <div id="minutes">00</div>
+    <div id="seconds">00</div>
+  </div>
+</div>
+</div>
+<br>
+        <br>
+        <br>
+        <br>
+<center>
+<img src="papa.gif" id="gif" style="display: none;">
+
+<script>
+  // Get the current time
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+
+  // Show the GIF between 21:37 and 21:38
+  if (hours == 21 && minutes >= 37 && minutes < 38) {
+    document.querySelector('#gif').style.display = 'block';
+  }
+
+  // Update the page every minute
+  setInterval(function() {
+    // Get the current time
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+
+    // Show or hide the GIF based on the current time
+    if (hours == 21 && minutes >= 37 && minutes < 38) {
+      document.querySelector('#gif').style.display = 'block';
+    } else {
+      document.querySelector('#gif').style.display = 'none';
+    }
+  }, 6000);
+</script>
+   <br><br>
+        <br>
+    Aby otrzymać blogosławieństwo poprzez odsluchanie boskiej piesni nalezy ustawic sie w kolejce przed 2137
+    <br>
+
+        </center>
+    </body>
+</html>

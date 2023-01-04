@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+  (c) Piet Jonas 2006, all rights reserved
+      http://piet.jonas.com
+--> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <title>Basketball</title>
+  <link rel="stylesheet" type="text/css" href="basketball.css"/>
+  <script type="text/javascript" src="basketball.js"></script>
+  <script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleSlider.js' charset='utf-8'></script>
+  <script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleButton.js' charset='utf-8'></script>
+  <script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleAnimator.js' charset='utf-8'></script>
+  <script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleInfoButton.js' charset='utf-8'></script>
+</head>  
+<body onload="setup();">
+    <!-- The front div is the main UI of the widget.  It is visible initially and 
+         is hidden when the preferences are shown
+      -->
+<div id="front">		
+		<div id="Background"></div><!-- The background for the front side -->
+		<div id="Game">
+      <applet id="GameApplet1" name="GameApplet" archive="BBApplet.jar" code="com.pietjonas.basketball.applet.BBApplet" width="368" height="368">
+				<param name="background" value="255 255 255" />
+				<param name="standardtext" value="" />
+				<param name="hittext" value="Yes!" />
+				<param name="cheattext" value="Uhhh, you cheated" />
+				<param name="atempttext" value="Hit(s) Shot(s)" />
+				<param name="loadtext" value="Wait, loading images..." />
+				<param name="mode" value="1" />
+				<param name="sound" value="off" />
+				<param name="showspeaker" value="false" />
+				<param name="drawborder" value="false" />
+				<param name="gravity" value="0.8" />
+				<param name="movingbasket" value="true" />
+				<!--param name=backimage value="background.gif" /-->
+			</applet>
+		</div>
+		<div id="PhoneVersionFront">
+		  Play it on your <a href="javascript:widget.openURL('http://www.itunes.com/app/basketballgame')">iPhone</a>
+		</div>
+		<div id="InfoButton" class="infoButton"></div>
+</div>
+
+    <!-- The back div is the preferences UI of the widget.  It is hidden by the
+         style sheet and shown by the showPrefs() function 
+      -->
+<div id="back">
+
+		<img class="backgroundImage" src="Default_reverse.png" alt="Backside" />  					<!-- The background for the back side -->
+		<div class="innerBox">
+			<div class="title">Basketball</div>
+			<div class="text">
+			  Version 1.0.2<br />
+			  (c) Piet Jonas 2006, all rights reserved.<br />
+			  <a href="javascript:widget.openURL('http://piet.jonas.com')">http://piet.jonas.com</a>
+			  <br />
+			  <a href="javascript:widget.openURL('http://www.itunes.com/app/basketballgame')">iPhone Version</a>
+			  <p />
+			  <div id="Widgetop">Works on <a href="javascript:widget.openURL('http://www.widgetop.com/downloads.html')">Widgetop</a></div>			  
+			</div>
+			<div id="Settings">
+			  <div id="SoundLabel">
+			    <input id="Sound" type="checkbox" />
+			    <label for="Sound">&nbsp;Play sounds</label>
+			  </div>
+			  <div id="MovingBasketLabel">
+			    <input id="MovingBasket" type="checkbox" />
+			    <label for="MovingBasket">&nbsp;Moving Basket</label>
+			  </div>
+			  <label id="GravityLabel" for="Gravity">Gravity:</label><div id="Gravity"></div>		  
+			</div>
+	    <div id="PhoneAvailable"><b>Now available!</div>  
+	    <div id="PhoneVersion">
+	      <a href="javascript:widget.openURL('http://www.itunes.com/app/basketballgame')"><img src="appStoreBadge.png" alt="Phone" style="vertical-align: middle"/></a>	      
+	    </div>
+			<div id="DoneButton"></div>
+		</div>
+	
+</div>
+
+
+</body>
+</html>

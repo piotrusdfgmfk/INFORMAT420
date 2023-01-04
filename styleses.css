@@ -1,0 +1,17 @@
+
+
+#container {
+	display: block;
+}
+
+#form {
+	padding: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+#form input {
+	width: 100%;
+}

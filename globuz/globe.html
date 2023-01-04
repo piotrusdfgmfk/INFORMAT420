@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Hector Globe</title>
+  <link rel="stylesheet" type="text/css" href="globe.css"/>
+  <script type="text/javascript" src="globe.js"></script>
+</head>
+<body onload="setup();">
+    <!-- The front div is the main UI of the widget.  It is visible initially and 
+         is hidden when the preferences are shown
+      -->
+<div id="front">		
+		<div id="Background"></div><!-- The background for the front side -->
+    <iframe id="Map" name="Map" src="" width="460" height="460" frameborder="0" border="0" scrolling="no">No iFrames</iframe>
+    <div id="InfoButton" class="infoButton"></div>
+</div>
+
+    <!-- The back div is the preferences UI of the widget.  It is hidden by the
+         style sheet and shown by the showPrefs() function 
+      -->
+<div id="back">
+
+		<img span="backgroundImage" src="Default_reverse.png" alt="Backside">  					<!-- The background for the back side -->
+		<div class="inset">
+			<div class="title">Globe</div>
+			<div class="text">Version 1.0</div>
+			<div id="Settings">
+			  Orbs:&nbsp;<select id="Orbs">
+			               <optgroup label="Home">
+			                 <option value="Map">Earth</option>
+			                 <option value="Moon">Moon</option>
+			                 <option value="Sun">Sun</option>
+			               </optgroup>  
+			               <optgroup label="Planets">
+			                 <option value="Mercury">Mercury</option>
+			                 <option>Venus</option>
+			                 <option>Mars</option>
+			                 <option>Jupiter</option>
+			                 <option>Saturn</option>
+			                 <option>Uranus</option>
+			                 <option>Neptune</option>
+			                 <option>Pluto</option>
+			               </optgroup>  
+			             </select>
+			   <p />
+			   <input id="Stars" type="checkbox" onchange="toggleStars()"> Show stars          
+         <p />
+         &nbsp;
+         <p />
+         <div id="Poly9">Made with <a href="javascript:widget.openURL('http://freeearth.poly9.com')">Poly9 FreeEarth</a></div>
+	       <p />
+	       <div id="Widgetop">Add to <a href="javascript:widget.openURL('http://www.widgetop.com?add=AHectorGlobe')">Widgetop</a></div>			  
+			</div>
+			<div id="DoneButton"></div>
+		</div>
+</div>
+
+
+</body>
+</html>

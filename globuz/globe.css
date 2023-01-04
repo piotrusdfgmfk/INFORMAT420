@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+}
+
+.infoButton {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    
+}
+
+#DoneButton {
+    position:absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+#back {
+    display:none;
+    color: #E0E0E0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#Map {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 460px;
+  height: 460px;
+}
+
+#Background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-image: url(FrontLarge.png);
+	background-repeat: repeat;
+}
+
+.title {
+    position:absolute;
+    top: 35px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.text {
+    position:absolute;
+    top: 65px;
+    left: 10px;
+    right: 10px;
+    font-size: 10px;
+}
+
+#Settings {
+    position:absolute;
+    top: 105px;
+    left: 10px;
+    right: 10px;
+    font-size: 10px;
+}
+
+#back a {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+}   
+
+#back a:hover {
+  text-decoration: underline;
+}
+
+#Widgetop {
+  display: none;
+}
