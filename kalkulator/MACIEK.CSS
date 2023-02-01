@@ -1,0 +1,486 @@
+@font-face {
+    font-family: Comic Mono;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(/assets/comic-mono-latin-400-normal.b5f97a2b.woff2) format("woff2"), url(/assets/comic-mono-latin-400-normal.41017cb6.woff) format("woff")
+}
+
+@font-face {
+    font-family: ibm_vga;
+    src: url(/WebPlus_IBM_VGA_8x16.woff) format("woff");
+    src: url(/PxPlus_IBM_VGA_8x16.ttf) format("truetype");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: CozetteVector;
+    src: url(/CozetteVector.ttf) format("truetype");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: NotoEmoji-Regular;
+    src: url(/NotoEmoji-Regular.ttf) format("truetype");
+    unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF
+}
+
+:root {
+    accent-color: #f075b7
+}
+
+::-moz-selection {
+    background: #e6dedc;
+    color: #46465c
+}
+
+::selection {
+    background: #e6dedc;
+    color: #46465c
+}
+
+body,
+pre {
+    font-size: 16px;
+    font-family: NotoEmoji-Regular, monospace
+}
+
+body.font-ibm-vga,
+body.font-ibm-vga pre {
+    font-size: 16px;
+    font-family: NotoEmoji-Regular, ibm_vga, monospace !important
+}
+
+body.font-cozette,
+body.font-cozette pre {
+    font-size: 12px;
+    font-family: NotoEmoji-Regular, CozetteVector, monospace !important
+}
+
+body.font-comic-mono,
+body.font-comic-mono pre {
+    font-size: 14px;
+    font-family: NotoEmoji-Regular, Comic Mono, monospace !important
+}
+
+body {
+    background-color: #17101a;
+    color: #e6dedc;
+    padding: 1em
+}
+
+b {
+    color: #fff
+}
+
+.black {
+    color: #46465c
+}
+
+b.black {
+    color: #634560
+}
+
+.red {
+    color: #e95678
+}
+
+b.red {
+    color: #ec6a88
+}
+
+.green {
+    color: #29d398
+}
+
+b.green {
+    color: #3fdaa4
+}
+
+.yellow {
+    color: #fab795
+}
+
+b.yellow {
+    color: #fbc3a7
+}
+
+.blue {
+    color: #26bbd9
+}
+
+b.blue {
+    color: #3fc6de
+}
+
+.magenta {
+    color: #ee64ae
+}
+
+b.magenta {
+    color: #f075b7
+}
+
+.cyan {
+    color: #59e3e3
+}
+
+b.cyan {
+    color: #6be6e6
+}
+
+.white {
+    color: #fdf0ed
+}
+
+b.white {
+    color: #fff
+}
+
+.black-bg {
+    background-color: #46465c
+}
+
+.red-bg {
+    background-color: #e95678
+}
+
+.green-bg {
+    background-color: #29d398
+}
+
+.yellow-bg {
+    background-color: #fab795
+}
+
+.blue-bg {
+    background-color: #26bbd9
+}
+
+.magenta-bg {
+    background-color: #ee64ae
+}
+
+.cyan-bg {
+    background-color: #59e3e3
+}
+
+.white-bg {
+    background-color: #fdf0ed
+}
+
+.bright-black-bg {
+    background-color: #634560
+}
+
+.bright-red-bg {
+    background-color: #ec6a88
+}
+
+.bright-green-bg {
+    background-color: #3fdaa4
+}
+
+.bright-yellow-bg {
+    background-color: #fbc3a7
+}
+
+.bright-blue-bg {
+    background-color: #3fc6de
+}
+
+.bright-magenta-bg {
+    background-color: #f075b7
+}
+
+.bright-cyan-bg {
+    background-color: #6be6e6
+}
+
+.bright-white-bg {
+    background-color: #fff
+}
+
+.red,
+.green,
+.yellow,
+.blue,
+.magenta,
+.cyan {
+    text-shadow: 0 0 .5px currentColor
+}
+
+a {
+    color: #ee64ae;
+    text-shadow: 0 0 .5px #ee64ae;
+    transition: .1s color, .1s text-shadow;
+    cursor: pointer
+}
+
+a:hover {
+    color: #f075b7;
+    text-shadow: 0 0 2px #ee64ae
+}
+
+b {
+    font-weight: 400;
+    text-shadow: 0 0 1px currentColor;
+    transition: .1s color, .1s text-shadow
+}
+
+.neofetch {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    padding: 1em;
+    gap: 1em
+}
+
+.neofetch-text {
+    max-width: 600px
+}
+
+.neofetch-img {
+    height: 8em;
+    width: auto
+}
+
+#discord:after {
+    display: none;
+    content: "oatmealine#5397";
+    color: #634560;
+    text-decoration: none !important;
+    text-shadow: none
+}
+
+#discord.copyable:after {
+    content: "oatmealine#5397 \1f4cb"
+}
+
+#discord.copied:after {
+    content: "oatmealine#5397 \2713"
+}
+
+#discord:hover:after {
+    display: inline;
+    position: relative;
+    margin-left: 6px;
+    color: transparent;
+    background-color: #634560;
+    background-clip: text;
+    -webkit-background-clip: text
+}
+
+#email:after {
+    display: none;
+    content: "oat at this domain";
+    color: #634560;
+    text-decoration: none !important;
+    text-shadow: none
+}
+
+#email:hover:after {
+    display: inline;
+    position: relative;
+    margin-left: 6px;
+    color: transparent;
+    background-color: #634560;
+    background-clip: text;
+    -webkit-background-clip: text
+}
+
+#email {
+    text-decoration: none !important
+}
+
+.underline {
+    text-decoration: underline
+}
+
+pre {
+    margin: 0;
+    padding: 0
+}
+
+@media screen and (max-width: 550px) {
+    .neofetch {
+        flex-direction: column
+    }
+
+    .neofetch-text {
+        max-width: none
+    }
+
+    .neofetch-img {
+        height: auto;
+        margin: 0 4em
+    }
+}
+
+.command {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px
+}
+
+.commandsymbol {
+    flex: 0 0 auto
+}
+
+input {
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border: none !important;
+    background-color: transparent;
+    color: inherit;
+    outline: none
+}
+
+.silentlink {
+    color: inherit;
+    text-decoration: none;
+    text-shadow: none
+}
+
+.js-only {
+    display: none
+}
+
+.blinker {
+    animation: blinker 2s linear infinite
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1
+    }
+
+    49.9% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .1em .4em;
+    max-width: 400px
+}
+
+.rainbow {
+    animation: colorRotate 4s linear 0s infinite
+}
+
+@keyframes colorRotate {
+    0% {
+        color: #e61919
+    }
+
+    10% {
+        color: #e69419
+    }
+
+    20% {
+        color: #bde619
+    }
+
+    30% {
+        color: #42e619
+    }
+
+    40% {
+        color: #19e66b
+    }
+
+    50% {
+        color: #19e6e6
+    }
+
+    60% {
+        color: #196be6
+    }
+
+    70% {
+        color: #4219e6
+    }
+
+    80% {
+        color: #bd19e6
+    }
+
+    90% {
+        color: #e61994
+    }
+
+    to {
+        color: #e61919
+    }
+}
+
+.character-sheet {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 2em
+}
+
+.character-art {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5em
+}
+
+.character-desc {
+    max-width: 700px
+}
+
+@media screen and (max-width: 639px) {
+    .character-sheet {
+        flex-direction: column
+    }
+
+    .character-art {
+        align-items: center
+    }
+
+    .character-desc {
+        max-width: none
+    }
+}
+
+.font-select {
+    background-color: #17101a;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    padding: .1em .5em .5em;
+    font-size: 16px !important
+}
+
+.font-select-x {
+    margin: 0 .6em;
+    line-height: 1;
+    display: block;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.font-select.hidden {
+    display: none !important
+}

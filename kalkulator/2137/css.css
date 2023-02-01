@@ -1,0 +1,40 @@
+#clock-container {
+
+  /* Add any styles for the clock container here */
+
+}
+
+
+
+#clock-container.hidden {
+
+  display: none;
+
+}
+
+
+
+#clock {
+
+  display: flex;
+
+
+
+
+
+
+
+  font-size: 150px;
+
+    font-family: comic sans ms;
+
+  font-weight: bold;
+
+
+  width: 50%;
+
+
+
+}
+
+

@@ -1,0 +1,7 @@
+
+# HTID:21023142: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile "/storage/ssd4/019/18643019/public_html/up/.htpasswd"
+Require user maciek
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:21023142:

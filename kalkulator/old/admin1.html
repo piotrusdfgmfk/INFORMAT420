@@ -1,0 +1,191 @@
+<html>
+    <head>
+<style>#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.key{}
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-5 {
+  appearance: none;
+  background-color: #AAAAAA;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #0000ff;
+cursor: none;
+
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #ffaaaa;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+#guziki{
+  position: absolute;
+  bottom: -25px;
+transform: translate(-50%,-50%);
+left: 50%;
+
+}
+
+</style>
+</head>
+<body>
+     <video id="background-video" autoplay loop>
+<source src="sc.mp4" type="video/mp4">
+
+</video>
+<script>
+var vid = document.getElementById("background-video");
+vid.volume = 0.3;
+</script>
+
+<script type="text/javascript" src="maciek2.js"></script>
+
+<!-- HTML !-->
+
+<div id="guziki">
+
+
+
+<table class="tg">
+    <tbody>
+  <tr>
+    <th class="tg-0pky" colspan="8"><button class="button-5" style="width:100%" role="button" disabled>CDZAM ADMIN PANEL v0.96</button></th>
+  </tr>
+    <tr>
+    <th class="tg-0pky" colspan="8"><button class="button-4" style="width:100%" onclick="window.location.href='.'" role="button">NACIŚNIJ ABY POWRÓCIĆ DO STRONY GŁOWNEJ</button></th>
+  </tr>
+</tbody>
+<tbody>
+  <tr>
+    <th class="tg-0lax"><button class="button-4" style="width:100%" onclick="window.location.href='baniakometer.html'" role="button">.</button></th>
+    <th class="tg-0lax"><button class="button-4" style="width:100%" onclick="window.location.href='stream.old/stream.html'" role="button">.</button></th>
+
+<th class="tg-0pky" colspan="3"rowspan><button class="button-5" style="width:100%" role="button" disabled>DOSTĘP DO PLIKÓW</button></th>
+    
+
+  </tr>
+</tbody>
+<tbody>
+  <tr>
+       <th class="tg-0lax"><button class="button-4" style="width:100%" onclick="window.location.href='baniakometer.html'" role="button">.</button></th>
+    <th class="tg-0lax"><button class="button-4" style="width:100%" onclick="window.location.href='stream.old/stream.html'" role="button">.</button></th>
+
+<th class="tg-0pky" colspan="2"><button class="button-5" style="width:100%" role="button" disabled>podaj pin:</button></th>
+<td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">0</button></td>
+
+  </tr>
+</tbody>
+<tbody>
+  <tr>
+          <th class="tg-0pky" colspan="2"><button class="button-5" style="width:100%" role="button" disabled>ARCHIWUM:</button></th>
+                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">1</button></td>
+                        <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">2</button></td>
+                                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">3</button></td>
+
+  </tr>
+</tbody>
+<tbody>
+  <tr>
+       <th class="tg-0lax"><button class="button-4" style="width:130px" onclick="window.location.href='baniakometer.html'" role="button">Baniakometr</button></th>
+    <th class="tg-0lax"><button class="button-4" style="width:130px" onclick="window.location.href='stream.old/stream.html'" role="button">Stream</button></th>
+
+                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">4</button></td>
+                        <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">5</button></td>
+                                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">6</button></td>
+
+  </tr>
+</tbody>
+<tbofu>
+    <tr>
+               <th class="tg-0lax"><button class="button-4" style="width:130px" onclick="window.location.href='baniakometer.html'" role="button">.</button></th>
+    <th class="tg-0lax"><button class="button-4" style="width:130px" onclick="window.location.href='stream.old/stream.html'" role="button">.</button></th>
+                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">7</button></td>
+                        <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">8</button></td>
+                                <td class="tg-0lax"><button class="button-4 key" style="width:100%" role="button">9</button></td>
+    </tr>
+</tbofu>
+</table>
+</div>
+
+</body>
+</html>

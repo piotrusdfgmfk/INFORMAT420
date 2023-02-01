@@ -1,11 +1,90 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <table>
-  <tr>
-    <td> <script type="text/javascript" src="//100widgets.com/js_data.php?id=268"></script></td>
-    <td>        <iframe src="https://casaa.unm.edu/code/mobile_bac_calculator.html" title="W3Schools Free Online Web Tutorials" width="700" height="400"></iframe></td>
-</table>
-       
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Informat420.myftp.org</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.4" />
 
-    </body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="maciek">
+        <div class="tytul">
+          <p id="date"></p>
+          <script>
+            function displayDate() {
+              var d = new Date();
+              var months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+              ];
+              var days = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+              ];
+              var day = days[d.getDay()];
+              var month = months[d.getMonth()];
+              var date = d.getDate();
+              var year = d.getFullYear();
+              var hour = d.getHours();
+              var min = d.getMinutes();
+              var sec = d.getSeconds();
+              hour = hour < 10 ? "0" + hour : hour;
+              min = min < 10 ? "0" + min : min;
+              sec = sec < 10 ? "0" + sec : sec;
+              var time = hour + ":" + min + ":" + sec;
+              var currentDate =
+                day + ", " + month + " " + date + " " + year + " " + time;
+              document.getElementById("date").innerHTML = currentDate;
+            }
+
+            setInterval(displayDate, 1000);
+          </script>
+          <h1>INFORMAT420.MYFTP.ORG</h1>
+          <h2>Serwis rozrywkowy <a href="https://nonsa.pl/wiki/Mi%C5%82o%C5%9Bnik_kolei">MIKOL</a></h2>
+        </div>
+        <div class="tresc">
+          <p >
+            > Prosze aktualizowac strone klawiszami
+            <a href="#spierdalaj_na_drzewo" onclick="window.close();"
+              ><span class="underline">ALT&nbsp;+&nbsp;F4</span></a>
+          </p>
+        <p>
+            > Zapraszamy do korzystania z nowej wersji serwisu rozrywkowego MIKOL. Aby jednak powrócic do starej wersji kliknij <a href="old/" id="link1" class="slide_right"><span class="underline">tutaj</span></a>
+          </p>
+        <p>
+          > Czatuj ze znajomymi dzieki funkcji <a href="/chat"><span class="underline">CHAT CDZAM</span></a>
+          <p>> Zapraszamy do odwiedzenia  
+            <a href="https://portalpasazera.000webhostapp.com/#ruchamcimatke" id="link2" class="slide_right"><span class="underline">Portalu Pasazera</span></a> 
+            i&nbsp;sprawdzenia rozkladow mpk krakow oraz kolei malopolskich
+        </p>
+          <p>
+           > Rozkoszuj sie dzwiekami <a href="muzyczka"><span class="underline">muzyki</span></a> religijnej prosto ze swiatyni
+          </p>
+          <p>> Sprawdz co dzis odpierdolil <a href="koziol/" id="link3" ><span class="underline">Michal Koziol</span></a> </p>
+          <p>> Zobacz najswiezsze zdjecia z <a href="zdjecia"><span class="underline">Mikolskiej Galerii Zdjec</span></a> a takze przyczyn sie do jej powstawania</p>
+          <p>> Codziennie o godzinie 21:37 otrzymaj boze blogoslawienstwo od <a href="2137/" class="papaj" id="link4"><span class="underline">JANA PAWLA II</span></a></p>
+          <p>> <a href="cytaty/"><span class="underline">Cytaty</span></a> motywacyjne, z biblii, slawnych polakow, i nie tylko</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
